@@ -5,9 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
-<body>
+<body bgcolor="faebd7">
     <a id="inicio" href="../index.html">
         <img src="../img/house-solid.ico" alt="icono" width="30" height="30">
     </a>
-</body>
+        <center>
+            <h1>Formulario de suscripción</h1>
+            <form action="recepcion.php" method="get"> 
+                <label>Nombre:</label>
+                <input type="text" placeholder="Introduce tu nombre"><br><br>
+
+                <label>Apellidos:</label>
+                <input type="text" placeholder="Introduce tus apellidos"><br><br>
+
+                <label>Sexo:</label>
+                <select>
+                    <option disabled selected>Seleccione un sexo</option>
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                    <option>Otro</option>
+                </select><br><br>
+
+                <label>Prefijo:</label>
+                <select>
+                    <option disabled selected>Seleccione un prefijo</option>
+                    <option>+34</option>
+                    <option>+33</option>
+                    <option>+351</option>
+                </select><br><br>
+                
+                <label>Número de teléfono:</label>
+                <input placeholder="Introduce tu número"><br><br>
+
+                <label>Correo electronico:</label>
+                <input placeholder="Introduce tu correo"><br><br>
+
+                <br>
+
+                <label>Pais</label>
+                <select>
+                    <option disabled selected>Seleccione un pais</option>
+                    <option>España</option>
+                    <option>Portugal</option>
+                    <option>Francia</option>
+                    <option>Italia</option>
+                    <option>Andorra</option>
+                </select>
+                <br><br><br>
+
+                <label>Detalles:</label><br>
+                <textarea cols="80" rows="4" placeholder="Introduce detalles extra"></textarea><br><br>
+
+                <br><br>
+                <button type="submit">Enviar datos</button>
+            </form>
+        </center>
+
+    </body>
 </html>
